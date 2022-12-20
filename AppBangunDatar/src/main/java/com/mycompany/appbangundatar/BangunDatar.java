@@ -9,24 +9,20 @@ package com.mycompany.appbangundatar;
  * @author HP
  */
 abstract class BangunDatar {
-    
-    private String nama;
+    private String namaBangunDatar;
 
     public BangunDatar() {
     }
 
-    public BangunDatar(String nama) {
-        this.nama = nama;
+    public String getNamaBangunDatar() {
+        return namaBangunDatar;
     }
 
-    public String getNama() {
-        return nama;
-    }
-
-    public void setNama(String nama) {
-        this.nama = nama;
-    }    
+    public void setNamaBangunDatar(String namaBangunDatar) {
+        this.namaBangunDatar = namaBangunDatar;
+    }   
     
     abstract double luas();
+    
     abstract double keliling();
 }
